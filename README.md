@@ -1,21 +1,15 @@
-Detailed Readme (Title/Your Name, Description, How to Get Started, User Stories, Credits)
-
-The link to your chosen API
-
-A snippet of your API data (in a code block)
-
-A Trello Board detailing the plan and progress of your project (linked on your Readme)
-
-User Stories explaining how a user interacts with your website (MVP)
-
 # **blooming**
-### by Jady Hom
-#
-#### **What is blooming?**
+#### @jadyhome
 
-#### **blooming** is for plant lovers, gardeners, and anyone who wants to learn more about plants! :seedling:
+**blooming** is for new plant lovers, new gardeners, and anyone who wants to start learning more about plants! 
 
-#### Users will be able to look up detailed information about plants:
+:seedling:
+
+Users will be able to look up the basic but necessary information about plants:
+
+<details>
+<summary>Types of Plant Info</summary>
+
  * Common Name
  * Scientific Name
  * Plant Duration
@@ -28,5 +22,27 @@ User Stories explaining how a user interacts with your website (MVP)
  * Minimum and Maximum Temperature
  * Minimum and Maximum Precipitation
  * Soil
+</details>
 
-#### 
+:seedling:
+
+### Getting Started
+
+![a snippet of my API code block](/Users/jadyhom/general-assembly/unit1/projects/blooming/trefle-api-codeblock.png)
+
+
+**Trello Board:** https://trello.com/b/Q979KG4j/blooming
+
+:seedling:
+
+### Users
+* Users are first welcomed by the home page
+*
+
+
+:seedling:
+
+### Credits
+[Trello Board](https://trello.com)
+**API:** https://trefle.io/
+**Code Screenshot:** https://carbon.now.sh/
