@@ -28,7 +28,7 @@ Users will be able to look up the basic but necessary information about plants:
 
 ### Getting Started
 
-![a snippet of my API code block](/img/trefle-api-codeblock.png)
+![a snippet of my API code block](trefle-api-codeblock.png)
 
 
 **Trello Board:** https://trello.com/b/Q979KG4j/blooming
