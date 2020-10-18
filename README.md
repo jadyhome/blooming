@@ -28,7 +28,7 @@ Users will be able to look up plant types and acquire the basic, but necessary i
 * Users will see title and one-line description of website
 * Users will see a search bar where they can input text
 * Users will be able to look up plants by typing into the search bar
-* Users will see small image icons and the plant common name and/or scientific name according to what they searched up
+* Users will see image icons and the plant's common name and/or scientific name from their search
 * Users will also see two nav links that will link them to other pages.
 * One will link them to a page with all the plants listed out - PLANT TYPES
 * One will link them to an About page with website description, contact information, and social media
