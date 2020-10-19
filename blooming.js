@@ -1,3 +1,5 @@
+
+
 const API_KEY = 'tAzty-RzZNho8aFNdhldc4vZIE3fuCZqr7659j4iyfU'
 
 const getPlants = async() => {
@@ -9,3 +11,8 @@ const getPlants = async() => {
       console.log(error)
     }
 }
+
+
+
+
+window.onload = getPlants
