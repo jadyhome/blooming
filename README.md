@@ -37,7 +37,7 @@ Users will be able to look up plant types and acquire the basic, but necessary i
 
 ### Getting Started
 
-![a snippet of my API code block]()
+![a snippet of my API code block](api-data-snippet.png)
 
 
 ![a snippet of my Trello Board](jady-trelloboard.png)
