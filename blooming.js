@@ -8,22 +8,23 @@ searchContainer.addEventListener("keyup", event => {
     // console.log(searchString)
   })
   
-let plantDiv = document.querySelector('.searchArea')
-
-const getPlants = async() => {
-  let input = document.getElementById('searchBar').value
-  const TREFLE_URL = `${DOMAIN}${API_KEY}&q=`
+  let plantDiv = document.querySelector('.searchArea')
+  
+  const getPlants = async() => {
+    let input = document.getElementById('searchBar').value
+    const TREFLE_URL = `${DOMAIN}${API_KEY}&q=`
     try {
       const response = await axios.get(TREFLE_URL + input)
       console.log(response)
       let allPlants = response.data
       console.log(allPlants.data[0].common_name)
-
-      for (let i = 0; i < allPlants.data.length; i++){
-        let plant = document.createElement('div')
-        plant.innerHTML = allPlants.data[i].common_name
-        plantDiv.appendChild(plant)
-      }
+      plantDiv.innerHTML = ''
+    
+    for (let i = 0; i < allPlants.data.length; i++){
+      let plant = document.createElement('div')
+      plant.innerHTML = allPlants.data[i].common_name
+      plantDiv.appendChild(plant)
+    }
       return
     } catch(error) {
       console.log(error)
