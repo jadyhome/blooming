@@ -8,7 +8,7 @@ searchContainer.addEventListener("keyup", event => {
     // console.log(searchString)
   })
   
-  let plantDiv = document.querySelector('.searchArea')
+  let plantDiv = document.querySelector('.searchResults')
   
   const getPlants = async() => {
     let input = document.getElementById('searchBar').value
@@ -18,30 +18,37 @@ searchContainer.addEventListener("keyup", event => {
       console.log(response)
       let allPlants = response.data
       console.log(allPlants.data[0].common_name)
-      plantDiv.innerHTML = ''
-    
-    for (let i = 0; i < allPlants.data.length; i++){
-      let plant = document.createElement('div')
-      plant.innerHTML = allPlants.data[i].common_name
-      plantDiv.appendChild(plant)
-    }
-      return
+      
+      plantDiv.innerHTML = '' // refreshes the innerHTML to a blank slate after each new search
+      
+      for (let i = 0; i < allPlants.data.length; i++){
+        let plantResults = document.createElement('div')
+        plantResults.setAttribute('class', 'plantResults')
+
+        let plantCommonName = document.createElement('h1')
+        plantCommonName.setAttribute('class', 'commonName')
+        plantCommonName.innerHTML = `Common Name: ${allPlants.data[i].common_name}`
+
+        let plantPhoto = document.createElement('img')
+        plantPhoto.setAttribute('class', 'photoResults')
+        plantPhoto.src = allPlants.data[i].image_url
+        
+        let plantSciName = document.createElement('h3')
+        plantSciName.setAttribute('class', 'sciName')
+        plantSciName.innerHTML = `Scientific Name: ${allPlants.data[i].scientific_name}`
+        
+        plantResults.appendChild(plantCommonName)
+        plantResults.appendChild(plantSciName)
+        plantResults.appendChild(plantPhoto)
+        plantDiv.appendChild(plantResults)
+
+      }
+        return
+
     } catch(error) {
       console.log(error)
     }
 }
-
-// const displayPlants = (plantData) => {
-//   let searchArea = document.querySelector('.search')
-//   let searchResult = document.createElement('div')
-//   let displayResult = document.createElement('h3')
-
-//   searchResult.className = 'search-result'
-//   displayResult.innerText = plantData
-
-//   searchResult.appendChild(displayResult)
-//   searchArea.appendChild(searchResult)
-// }
 
 // document.querySelector('#search').addEventListener('click', getPlants)
 // window.onload = getPlants
