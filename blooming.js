@@ -71,3 +71,6 @@ const getPlants = async () => {
     console.log(error)
   }
 }
+
+// addEventListeners
+document.querySelector('#search').addEventListener('click', getPlants)
