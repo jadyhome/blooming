@@ -50,9 +50,10 @@ h1 {
     font-size: 40px;
     padding: 15px;
     margin: 15px;
+    cursor: pointer;
 }
 
-.home, .about {
+.search, .about {
     display: flex;
     margin-left: auto;
     font-family: Arial, Helvetica, sans-serif;
@@ -82,8 +83,7 @@ button {
 
 .searchArea {
     display: grid;
-    justify-content: center;
-    align-content: center;
+
     padding: 10px;
     margin: 10px;
 }
@@ -129,6 +129,12 @@ button {
 
 
 /* for about.html */
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
 input {
     border: 0;
     border: 2px solid #a6e3a1;
@@ -138,14 +144,18 @@ input {
     font-size: 12px;
     text-transform: lowercase;
   }
-  input[type="submit"] {
+
+input[type="message"] {
+    padding: 10px;
+    padding-bottom: 100px;
+    }
+
+input[type="submit"] {
     background: #a6e3a1;
     color: #000000;
     font-weight: 800;
     padding: 10px;
-  }
-  input[type="message"] {
-    padding: 10px;
-    padding-bottom: 100px;
-  }
+    width: 250px;
+    cursor: pointer;
+}
 /* for about.html */

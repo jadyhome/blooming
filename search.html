@@ -12,17 +12,17 @@
     <header>
         <div class="header-container">
             <div class="title-container">
-                <div class="title">blooming</div>
+                <div class="title" onclick="document.location='homepg.html'">blooming</div>
             </div>
             <div class="menu-container">
-                <div class="home" onclick="document.location='homepg.html'">home</div>
+                <div class="search" onclick="document.location='search.html'">search</div>
                 <div class="about" onclick="document.location='about.html'">about</div>
             </div>
         </div>
     </header>
 
     <div id="searchContainer">
-        <input type="text" name="searchBar" id="searchBar" placeholder="searching..." onfocus="this.value=''"/>
+        <input type="text" name="searchBar" id="searchBar" placeholder="searching..." onfocus="this.value=''" />
         <button id="search" onclick="getPlants()">Click</button>
     </div>
 
