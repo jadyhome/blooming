@@ -6,7 +6,17 @@ body {
 
 .header-container {
     display: flex;
+    /* justify-content: flex-end; */
+}
+
+.title-container {
+    display: flex;
     justify-content: flex-start;
+}
+
+.menu-container {
+    display: flex;
+    align-items: flex-end;
 }
 
 .title {
@@ -25,39 +35,38 @@ body {
     margin: 15px;
 }
 
-.searchContainer {
-    display: flex;
-    
-}
-
 input {
-    border: 1px solid #a6e3a1;
+    border: 2px solid #a6e3a1;
+    border-radius: 20px;
     outline: none;
     padding: 0.5rem;
     width: 15rem;
 }
 
 button {
-    border: 1px solid #a6e3a1;
+    border: 2px solid #a6e3a1;
+    border-radius: 20px;
     outline: none;
     padding: 0.5rem;
     background-color: #a6e3a1;
     color: black;
+    cursor: pointer;
 }
 
 .searchArea {
     display: grid;
     justify-content: center;
     align-content: center;
-    
+    padding: 10px;
+    margin: 10px;
 }
 
 .searchResults {
     display: grid;
     /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 30px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px;
     margin: 10px;
@@ -66,24 +75,27 @@ button {
 }
 
 .plantResults {
+    border-radius: 20px;
     background-color: #a6e3a1;
     padding: 10px;
 }
 
-.commonName, .sciName {
+.commonName, .sciName, .genusName, .familyName, .commonFamily {
     background-color: #a6e3a1;
     display: flex;
-    justify-content: center;
-    align-content: center;
+    justify-content: first baseline;
+    align-content: first baseline;
     font-size: 12px;
+    margin: 5px;
 }
 
 .photoResults {
     justify-self: center;
     align-self: center;
     background-size: cover;
-    width: 240px;
-    height: 240px;
-    padding: 10px;
-    margin: 10px;
+    border-radius: 20px;
+    width: 250px;
+    height: 250px;
+    margin: 5px;
+    padding: 5px;
 }
