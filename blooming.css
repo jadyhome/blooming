@@ -4,9 +4,29 @@ body {
     color: black;
 }
 
+/* for home page html */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 h1 {
     color: #a6e3a1;
+    font-size: 72px;
 }
+
+#homepage-button {
+    border: 2px solid #a6e3a1;
+    border-radius: 20px;
+    outline: none;
+    padding: 0.5rem;
+    background-color: #a6e3a1;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+/* for home page html */
 
 .header-container {
     display: flex;
@@ -37,6 +57,7 @@ h1 {
     font-size: 40px;
     padding: 15px;
     margin: 15px;
+    cursor: pointer;
 }
 
 input {
