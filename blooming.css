@@ -4,7 +4,7 @@ body {
     color: black;
 }
 
-/* for home page html */
+/* for homepg.html */
 .home-container {
     display: flex;
     justify-content: center;
@@ -28,6 +28,8 @@ h1 {
 }
 /* for home page html */
 
+
+/* for search.html */
 .header-container {
     display: flex;
     /* justify-content: flex-end; */
@@ -88,7 +90,6 @@ button {
 
 .searchResults {
     display: grid;
-    /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-gap: 30px;
@@ -124,3 +125,27 @@ button {
     margin: 5px;
     padding: 5px;
 }
+/* for search.html */
+
+
+/* for about.html */
+input {
+    border: 0;
+    border: 2px solid #a6e3a1;
+    padding: 10px;
+    margin: 4px;
+    width: 250px;
+    font-size: 12px;
+    text-transform: lowercase;
+  }
+  input[type="submit"] {
+    background: #a6e3a1;
+    color: #000000;
+    font-weight: 800;
+    padding: 10px;
+  }
+  input[type="message"] {
+    padding: 10px;
+    padding-bottom: 100px;
+  }
+/* for about.html */
