@@ -35,23 +35,23 @@ const getPlants = async () => {
         plantPhoto.setAttribute('class', 'photoResults')
         plantPhoto.src = allPlants.data[i].image_url
 
-        let plantCommonName = document.createElement('h1')
+        let plantCommonName = document.createElement('h3')
         plantCommonName.setAttribute('class', 'commonName')
         plantCommonName.innerHTML = `Common Name: ${allPlants.data[i].common_name}`
 
-        let plantSciName = document.createElement('h1')
+        let plantSciName = document.createElement('h3')
         plantSciName.setAttribute('class', 'sciName')
         plantSciName.innerHTML = `Scientific Name: ${allPlants.data[i].scientific_name}`
 
-        let plantGenus = document.createElement('h1')
+        let plantGenus = document.createElement('h3')
         plantGenus.setAttribute('class', 'genusName')
         plantGenus.innerHTML = `Genus: ${allPlants.data[i].genus}`
 
-        let plantFamily = document.createElement('h1')
+        let plantFamily = document.createElement('h3')
         plantFamily.setAttribute('class', 'familyName')
         plantFamily.innerHTML = `Family: ${allPlants.data[i].family}`
 
-        let plantCommonFamily = document.createElement('h1')
+        let plantCommonFamily = document.createElement('h3')
         plantCommonFamily.setAttribute('class', 'commonFamily')
         plantCommonFamily.innerHTML = `Family Common Name: ${allPlants.data[i].family_common_name}`
 
