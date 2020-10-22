@@ -11,27 +11,31 @@
 
 <body>
     <header>
-        <div class="header-container">
-            <div class="title-container">
-                <div class="title" onclick="document.location='homepg.html'">blooming</div>
-            </div>
-            <div class="menu-container">
-                <div class="search" onclick="document.location='index.html'">search</div>
-                <div class="about" onclick="document.location='about.html'">about</div>
-            </div>
-        </div>
+        <nav class="header-container">
+            <div class="title" onclick="document.location='homepg.html'">blooming</div>
+            <div class="search" onclick="document.location='index.html'">search</div>
+            <div class="about" onclick="document.location='about.html'">about</div>
+        </nav>
     </header>
 
     <div class="description">
-        <h2>DESCRIPTION HERE</h2>
+        <p>
+            <em>blooming</em> is a website for beginners to search through our plant index.<br />
+            you will be able to search and find out the plant's common names, <br />scientific names, genuses, families, and family
+            common names.
+        </p>
     </div>
 
     <div class="contact-form">
-        <input type="name" placeholder="name">
-        <input type="email" placeholder="email">
-        <input type="phone" placeholder="phone #">
-        <input type="message" placeholder="leave a message">
-        <input type="submit" value="submit" onclick="alert('you have submitted!')">
+        <div class="contact-header">Contact Us</div>
+        <form class="contact-body">
+            <input type="name" class="contact-name" placeholder="name">
+            <input type="email" class="email" placeholder="email">
+            <textarea type="text" class="message" placeholder="leave a message"></textarea>
+            <button type="submit" class="submit-button" value="submit"
+                onclick="alert('you have submitted!')">submit</button>
+        </form>
+
     </div>
 
     <div class="socialmedia">
@@ -47,7 +51,7 @@
         <a href="https://www.github.com">
             <img src="icons8-github-50.png" class="github" alt="github.com">
         </a>
-        
+
         <a href="https://www.linkedin.com">
             <img src="icons8-linkedin-50.png" class="linkedin" alt="linkedin.com">
         </a>
