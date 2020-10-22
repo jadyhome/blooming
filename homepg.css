@@ -1,6 +1,6 @@
 body {
     text-align: center;
-    background-color: #ffffff;
+    background-color: #a5e5f2;
     margin: 0;
 }
 
@@ -31,7 +31,6 @@ img {
     background-size: cover;
     height: 100vh;
     width: 100vw;
-    transition: opacity .5s ease-in;
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
 }
-
-img + img {opacity: 0;}
