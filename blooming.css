@@ -8,9 +8,9 @@ body {
 /* for homepg.html */
 .home-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    
+    height: 75vh;
 }
 
 h1 {
@@ -19,7 +19,16 @@ h1 {
     font-size: 72px;
 }
 
+.homepageButton {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 #homepage-button {
+    /* display: flex;
+    justify-content: space-around;
+    align-items: center; */
     border: 2px solid #a5e5f2;
     border-radius: 20px;
     outline: none;
@@ -28,6 +37,7 @@ h1 {
     color: #a5e5f2;
     cursor: pointer;
     font-weight: bold;
+    
 }
 /* for home page html */
 
@@ -35,7 +45,10 @@ h1 {
 /* for search.html */
 .header-container {
     display: flex;
-    /* justify-content: flex-end; */
+   flex-direction: row; /* default */
+   justify-content: flex-start; /* default */
+   height: 70px;
+   background-color: #F03F3C;
 }
 
 .title-container {
@@ -45,6 +58,9 @@ h1 {
 
 .menu-container {
     display: flex;
+    flex-direction: row;
+    margin-left: auto;
+
     align-items: flex-end;
 }
 
@@ -58,7 +74,7 @@ h1 {
 
 .search, .about {
     display: flex;
-    margin-left: auto;
+    flex-direction: row;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 28px;
     padding: 15px;
@@ -140,9 +156,16 @@ img {
 
 
 /* for about.html */
+.description {
+    position: fixed;
+    text-align: right;
+}
+
 .contact-form {
     display: grid;
-    
+    position: relative;
+    text-align: right;
+    margin-left: 50%;
 }
 
 input {
@@ -165,16 +188,33 @@ input[type="submit"] {
     color: #a5e5f2;
     font-weight: 800;
     padding: 10px;
-    width: 250px;
+    width: 100px;
     cursor: pointer;
 }
 
-.socialmedia img{
-    display: inline-block;
-    justify-content: center;
+.socialmedia {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    margin-top: 10%;
+}
+
+.buffer {
+    width: 50vw;
+}
+
+.youtube {
     width: 50px;
     height: 50px;
-    object-fit: cover;
+}
+
+.instagram {
+    width: 50px;
+    height: 50px;
+}
+
+.twitter {
+    width: 50px;
+    height: 50px;
 }
 /* for about.html */
