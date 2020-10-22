@@ -11,22 +11,18 @@
 
 <body>
     <header>
-        <div class="header-container">
-            <div class="title-container">
-                <div class="title" onclick="document.location='homepg.html'">blooming</div>
-            </div>
-            <div class="menu-container">
-                <div class="search" onclick="document.location='index.html'">search</div>
-                <div class="about" onclick="document.location='about.html'">about</div>
-            </div>
-        </div>
+        <nav class="header-container">
+            <div class="title" onclick="document.location='homepg.html'">blooming</div>
+            <div class="search" onclick="document.location='index.html'">search</div>
+            <div class="about" onclick="document.location='about.html'">about</div>
+        </nav>
     </header>
 
     <div>
-        <img src="pexels-agnieszka-palmowska-631909.jpg" alt="Underneath Big Green Leaves; Photo Credit: Agnieszka Palmowska on Pexels"/>
+        <img src="assets/pexels-agnieszka-palmowska-631909.jpg" alt="Underneath Big Green Leaves; Photo Credit: Agnieszka Palmowska on Pexels"/>
     </div>
 
-    <div id="searchContainer">
+    <div id="searchBarContainer">
         <input type="text" name="searchBar" id="searchBar" placeholder="searching..." onfocus="this.value=''" />
         <button id="search">Search</button>
     </div>
