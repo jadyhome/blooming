@@ -2,7 +2,6 @@ body {
     text-align: center;
     background-color: #ffffff;
     margin: 0;
-
 }
 
 /* for homepg.html */
@@ -157,8 +156,10 @@ img {
 
 /* for about.html */
 .description {
-    position: fixed;
-    text-align: right;
+    display: grid;
+    position: relative;
+    text-align: left;
+
 }
 
 .contact-form {
@@ -184,8 +185,8 @@ input[type="message"] {
     }
 
 input[type="submit"] {
-    background: #ffffff;
-    color: #a5e5f2;
+    background: #a5e5f2;
+    color: #ffffff;
     font-weight: 800;
     padding: 10px;
     width: 100px;
@@ -196,16 +197,11 @@ input[type="submit"] {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10%;
+    margin-top: 20%;
 }
 
 .buffer {
-    width: 50vw;
-}
-
-.youtube {
-    width: 50px;
-    height: 50px;
+    width: 40vw;
 }
 
 .instagram {
@@ -214,6 +210,16 @@ input[type="submit"] {
 }
 
 .twitter {
+    width: 50px;
+    height: 50px;
+}
+
+.github {
+    width: 50px;
+    height: 50px;
+}
+
+.linkedin {
     width: 50px;
     height: 50px;
 }

@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+    background-color: #ffffff;
+    margin: 0;
+}
+
+.home-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #a5e5f2;
+    font-family: Bitter;
+    font-size: 72px;
+    cursor: pointer;
+}
+
+h1:hover {
+    color: #ffffff;
+    font-family: Bitter;
+    font-size: 72px;
+    cursor: pointer;
+}
