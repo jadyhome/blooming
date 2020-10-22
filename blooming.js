@@ -14,46 +14,44 @@ const getPlants = async () => {
   const TREFLE_URL = `${DOMAIN}${API_KEY}&q=`
   try {
     const response = await axios.get(TREFLE_URL + input)
-    console.log(response)
-    let allPlants = response.data
-    console.log(allPlants.data[0].common_name)
+    let allPlants = response.data.data
 
     plantDiv.innerHTML = '' // refreshes the innerHTML to a blank slate after each new search
 
-    for (let i = 0; i < allPlants.data.length; i++) {
-      if (allPlants.data[i].image_url !== null
-        && allPlants.data[i].common_name !== null
-        && allPlants.data[i].scientific_name !== null
-        && allPlants.data[i].genus !== null
-        && allPlants.data[i].family !== null
-        && allPlants.data[i].family_common_name !== null) {
+    for (let i = 0; i < allPlants.length; i++) {
+      if (allPlants[i].image_url !== null
+        && allPlants[i].common_name !== null
+        && allPlants[i].scientific_name !== null
+        && allPlants[i].genus !== null
+        && allPlants[i].family !== null
+        && allPlants[i].family_common_name !== null) {
 
         let plantResults = document.createElement('div')
         plantResults.setAttribute('class', 'plantResults')
 
         let plantPhoto = document.createElement('img')
         plantPhoto.setAttribute('class', 'photoResults')
-        plantPhoto.src = allPlants.data[i].image_url
+        plantPhoto.src = allPlants[i].image_url
 
         let plantCommonName = document.createElement('h3')
         plantCommonName.setAttribute('class', 'commonName')
-        plantCommonName.innerHTML = `Common Name: ${allPlants.data[i].common_name}`
+        plantCommonName.innerHTML = `Common Name: ${allPlants[i].common_name}`
 
         let plantSciName = document.createElement('h3')
         plantSciName.setAttribute('class', 'sciName')
-        plantSciName.innerHTML = `Scientific Name: ${allPlants.data[i].scientific_name}`
+        plantSciName.innerHTML = `Scientific Name: ${allPlants[i].scientific_name}`
 
         let plantGenus = document.createElement('h3')
         plantGenus.setAttribute('class', 'genusName')
-        plantGenus.innerHTML = `Genus: ${allPlants.data[i].genus}`
+        plantGenus.innerHTML = `Genus: ${allPlants[i].genus}`
 
         let plantFamily = document.createElement('h3')
         plantFamily.setAttribute('class', 'familyName')
-        plantFamily.innerHTML = `Family: ${allPlants.data[i].family}`
+        plantFamily.innerHTML = `Family: ${allPlants[i].family}`
 
         let plantCommonFamily = document.createElement('h3')
         plantCommonFamily.setAttribute('class', 'commonFamily')
-        plantCommonFamily.innerHTML = `Family Common Name: ${allPlants.data[i].family_common_name}`
+        plantCommonFamily.innerHTML = `Family Common Name: ${allPlants[i].family_common_name}`
 
         plantResults.appendChild(plantPhoto)
         plantResults.appendChild(plantCommonName)
@@ -62,7 +60,6 @@ const getPlants = async () => {
         plantResults.appendChild(plantFamily)
         plantResults.appendChild(plantCommonFamily)
         plantDiv.appendChild(plantResults)
-
       }
     }
     return

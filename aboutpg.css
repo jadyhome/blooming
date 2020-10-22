@@ -4,44 +4,6 @@ body {
     margin: 0;
 }
 
-/* for homepg.html */
-.home-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 75vh;
-}
-
-h1 {
-    color: #a5e5f2;
-    font-family: Bitter;
-    font-size: 72px;
-}
-
-.homepageButton {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#homepage-button {
-    /* display: flex;
-    justify-content: space-around;
-    align-items: center; */
-    border: 2px solid #a5e5f2;
-    border-radius: 20px;
-    outline: none;
-    padding: 0.5rem;
-    background-color: #ffffff;
-    color: #a5e5f2;
-    cursor: pointer;
-    font-weight: bold;
-    
-}
-/* for home page html */
-
-
-/* for search.html */
 .header-container {
     display: flex;
    flex-direction: row; /* default */
@@ -81,80 +43,6 @@ h1 {
     cursor: pointer;
 }
 
-input {
-    border: 2px solid #a5e5f2;
-    border-radius: 20px;
-    outline: none;
-    padding: 0.5rem;
-    width: 15rem;
-}
-
-button {
-    border: 2px solid #a5e5f2;
-    border-radius: 20px;
-    outline: none;
-    padding: 0.5rem;
-    background-color: #ffffff;
-    color: #a5e5f2;
-    cursor: pointer;
-}
-
-img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
-#searchContainer {
-    padding: 25px;
-}
-
-.searchArea {
-    display: grid;
-}
-
-.searchResults {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
-    margin: 10px;
-    justify-self: center;
-    align-self: center;
-}
-
-.plantResults {
-    border-radius: 20px;
-    background-color: #a5e5f2;
-    padding: 10px;
-}
-
-.commonName, .sciName, .genusName, .familyName, .commonFamily {
-    background-color: #a5e5f2;
-    display: flex;
-    justify-content: first baseline;
-    align-content: first baseline;
-    font-size: 12px;
-    margin: 5px;
-}
-
-.photoResults {
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    background-size: cover;
-    border-radius: 20px;
-    width: 250px;
-    height: 250px;
-    margin: 5px;
-    padding: 5px;
-}
-/* for search.html */
-
-
-/* for about.html */
 .description {
     display: grid;
     position: relative;
@@ -172,7 +60,9 @@ img {
 input {
     border: 0;
     border: 2px solid #a5e5f2;
-    padding: 10px;
+    border-radius: 20px;
+    outline: none;
+    padding: 0.5rem;
     margin: 4px;
     width: 250px;
     font-size: 12px;
@@ -223,4 +113,3 @@ input[type="submit"] {
     width: 50px;
     height: 50px;
 }
-/* for about.html */
