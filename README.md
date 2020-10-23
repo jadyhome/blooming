@@ -37,7 +37,7 @@
 
 ### Credits
 
-Trello Board: https://trello.com)
+Trello Board: https://trello.com
 
 API: https://trefle.io/
 
