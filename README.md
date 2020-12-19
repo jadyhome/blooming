@@ -1,6 +1,9 @@
 # ***blooming***
 #### by Jady Hom
 
+:seedling::seedling::seedling:
+Check out my deployed website here: [blooming](http://blooming.surge.sh/)
+
 ***blooming*** is a website for beginners to search through our plant index. Users will be able to search and find out the plant's common names, scientific names, genuses, families, and family common names.
 
 **Plant Index:**
